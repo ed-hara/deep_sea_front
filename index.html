@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Deep Sea - Home</title>
+</head>
+
+<body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+
+        <div class="title">
+            <figure><img src="/home/eduardo/Documentos/trabalho/meu_app_front/meu_app_front/img/deep_logo.jpg"
+                    width="100" height="100">
+            </figure>
+
+
+        </div>
+
+
+    </header>
+    <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newNome" placeholder="Nome do Navio:">
+        <input type="number" id="newImo" placeholder="Imo:">
+        <input type="date" id="newEta" placeholder="Eta:">
+        <input type="date" id="newEtb" placeholder="Etb:">
+        <input type="date" id="newEts" placeholder="Ets:">
+        <select id="newTerminal">
+            <option value="Sepetiba Tecon">Sepetiba Tecon</option>
+            <option value="Csn">Csn</option>
+            <option value="Cpbs">Cpbs</option>
+            <option value="Guaiba">Guaiba</option>
+            <option value="Porto Sudeste">Porto Sudeste</option>
+        </select>
+        <input type="text" id="newObs" placeholder="Obs:">
+        <input type="email" id="newEmail" placeholder="Email:">
+        <button onclick="newItem()" class="addBtn">Adicionar</button>
+    </section>
+
+    <br><br>
+    <h1>Navios cadastrados</h1><br>
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Navio</th>
+                <th>Imo</th>
+                <th>Eta</th>
+                <th>Etb</th>
+                <th>Ets</th>
+                <th>Terminal</th>
+                <th>Obs</th>
+                <th>Email</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
